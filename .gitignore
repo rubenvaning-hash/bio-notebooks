@@ -11,3 +11,6 @@ wheels/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Data (lives in C:io_data, never in the repo)
+*.h5ad

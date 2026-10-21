@@ -7,7 +7,7 @@ plot it, and say something defensible about what it shows.
 
 ## Featured: dexamethasone in airway smooth muscle cells
 
-**Notebook:** [`04-airway.ipynb`](04-airway.ipynb)
+**Notebook:** [`04-airway.ipynb`](phase1-foundations/04-airway.ipynb)
 
 **Question.** Which genes change when airway smooth muscle cells are treated with
 dexamethasone, a glucocorticoid used against asthma?
@@ -48,15 +48,24 @@ a gene's own spread is too unreliable to test it alone.
 **Limits.** n = 4 pairs. The moderated t gives ranks, not p-values. The counts are loaded
 from a course copy of the dataset (bioboot BIMM143), not processed from the raw GEO files.
 
+## Repository layout
+
+| Folder | What |
+|---|---|
+| `phase1-foundations/` | Notebooks 01 to 05: Python that touches data |
+| `artifact2-ra-blood/` | Artifact 2: RA blood single-cell (in progress) |
+| `rosalind/` | Rosalind problems, one file per problem ID |
+| `tasters/` | Monthly one-notebook tastes of other bioinformatics niches |
+
 ## Notebooks
 
 | Notebook | Dataset | Finding |
 |---|---|---|
-| `start.ipynb` | `seaborn` penguins (344 rows) | Environment check: shape, first rows, species means. |
-| [`01-first-steps.ipynb`](01-first-steps.ipynb) | penguins | Boolean filters silently drop rows with missing values. |
-| [`02-one-figure.ipynb`](02-one-figure.ipynb) | penguins | Bill length alone cannot tell Chinstrap from Gentoo; adding bill depth separates all three species. |
-| [`03-multiple-testing.ipynb`](03-multiple-testing.ipynb) | simulated, 10,000 genes | Without correction, 38% of the "significant" list is false. Bonferroni keeps only 3 real effects; Benjamini-Hochberg (written by hand, identical to scipy) keeps 82 with 0 false. |
-| [`04-airway.ipynb`](04-airway.ipynb) | airway, GSE52778 | See above: with n = 4, a per-gene t-test misses the paper's headline gene. |
+| [`start.ipynb`](phase1-foundations/start.ipynb) | `seaborn` penguins (344 rows) | Environment check: shape, first rows, species means. |
+| [`01-first-steps.ipynb`](phase1-foundations/01-first-steps.ipynb) | penguins | Boolean filters silently drop rows with missing values. |
+| [`02-one-figure.ipynb`](phase1-foundations/02-one-figure.ipynb) | penguins | Bill length alone cannot tell Chinstrap from Gentoo; adding bill depth separates all three species. |
+| [`03-multiple-testing.ipynb`](phase1-foundations/03-multiple-testing.ipynb) | simulated, 10,000 genes | Without correction, 38% of the "significant" list is false. Bonferroni keeps only 3 real effects; Benjamini-Hochberg (written by hand, identical to scipy) keeps 82 with 0 false. |
+| [`04-airway.ipynb`](phase1-foundations/04-airway.ipynb) | airway, GSE52778 | See above: with n = 4, a per-gene t-test misses the paper's headline gene. |
 
 ## Setup
 
